@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    .wufoo {
+        font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+    }
+</style>
 <body>
-
+<form method="get" action="simpleform.html" class = "wufoo">
     <h1 b> Order Form</h1>
     <h4 p> What would you like to buy?</h4>
-<select>
-    <option value="A" > A</option>
+<select style="width: 200px">
+    <option value=" " >A</option>
+    <option > B (+ 0.5$)</option>
+    <option > C (+ 0.5$)</option>
 </select>
     <h4 p > How many would you like to order?</h4>
-    <input type="radio" value=" 1 - $10" > 1 - $10 <br>
-    <input type="radio" value=" 2 - $20"> 2 - $20   <br>
-    <input type="radio" value=" 3 - $25"> 3 - $25   <br>
+    <input type="radio" name="pick" value=" 1 - $10" > 1 - $10 <br>
+    <input type="radio" name="pick" value=" 2 - $20"> 2 - $20   <br>
+    <input type="radio" name="pick" value=" 3 - $25"> 3 - $25   <br>
 
-    <p> Name <span style="color: red"   >*</span>:</p>
-    <input type="text" name="Name*" placeholder="FirstName">
-    <input type="text" name="Name*" placeholder="LastName">
+    <p> Name <span style="color: #ff0000"   >*</span>:</p>
+    <input type="text" name="Name" placeholder="FirstName">
+    <input type="text" name="Name"  placeholder="LastName">
     <p>Email:</p>
-    <input type="email" value="" name="Email" size="50px">
+    <input type="email" value="" name="Email" size="35px">
     <p>Phone Number:</p>
     <input type="text" size="1px">-<input type="text" size="1px">-<input type="text" size="1px"><br><br>
     <input type="submit" >
+</form>
+
 </body>
 </html>
